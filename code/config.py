@@ -29,13 +29,13 @@ EPOCHS = 100
 PRINT_FREQ = 10
 
 # --- 损失函数权重 ---
-LAMBDA_FEATURE = 1.0   # L_feature 的权重  尝试过的序列：1.0 --> 10.0 --> 2.0(√) --> 3.0 --> 2.5 --> 1.5--> 1.8(√)--> 1.5 --> 0.5--> 0.8(√)--> 0.2
-DEAD_ZONE = 0.1 # L_feature中组间差异L_diff的死区，防止模型为了减少组间差异损失无限制拉大抑郁和正常群体的差异。
-ALPHA_KL_MAX = 0.0001 # KL退火的最大值 (β在论文中的叫法)  尝试过的序列：0.005 --> 0.0001(√) --> 0.001
-BETA_ADV = 0.0      # 对抗损失的权重,  尝试过的序列：0.5 --> 0.1(√)
+LAMBDA_FEATURE = 1.0   # L_feature 的权重  
+DEAD_ZONE = 0.1 #
+ALPHA_KL_MAX = 0.0001 # KL退火的最大值 
+BETA_ADV = 0.0      # 对抗损失的权重,  
 GAMMA_FEATURE_MIX = 0.5 # L_feature中，条件损失和差异损失的混合比例 
-DELTA_SCALE = 0.5 # L_scale损失的权重  尝试过的序列：1.0 --> 2.0--> 1.8--> 1.5 --> 0.5 --> 0.6 --> 0.65
-ETA_VA = 0.1145 # L_va_consistency的权重 尝试过的序列：1.0 --> 0.5 --> 0.25 --> 0.15(√) --> 0.2 --> 0.1--> 0.05 --> 0.1145
+DELTA_SCALE = 0.5 # L_scale损失的权重  
+ETA_VA = 0.1145 # L_va_consistency的权重 
 
 # --- Free Bits 配置 ---
 USE_FREE_BITS = True       # 是否启用Free Bits
