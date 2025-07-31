@@ -39,7 +39,7 @@ ETA_VA = 0.1145 # L_va_consistency的权重
 
 # --- Free Bits 配置 ---
 USE_FREE_BITS = True       # 是否启用Free Bits
-FREE_BITS_EPSILON = 2.0   # 尝试过的序列：0.1 --> 1.0 --> 2.0
+FREE_BITS_EPSILON = 2.0   
 
 # 特征损失内部权重 
 W_HAPPY_REACTIVITY_NORMAL = 2.0
